@@ -1,20 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #0A0E1A;
-  --color-charcoal: #1A1F2E;
-  --color-offwhite: #E8E6E1;
-  --color-brightwhite: #F5F4F0;
-  --color-teal: #5BA4A4;
+  --color-navy: var(--theme-navy);
+  --color-charcoal: var(--theme-charcoal);
+  --color-offwhite: var(--theme-offwhite);
+  --color-brightwhite: var(--theme-brightwhite);
+  --color-teal: var(--theme-teal);
   --color-crisisred: #E07070;
   --color-successgreen: #6BAF7B;
 
   --animate-fade-in: fade-in 400ms ease-in-out;
+  --animate-breathe: breathe 4s ease-in-out infinite;
 
   @keyframes fade-in {
     0% { opacity: 0; transform: translateY(5px); }
     100% { opacity: 1; transform: translateY(0); }
   }
+
+  @keyframes breathe {
+    0%, 100% { opacity: 0.5; transform: scale(0.95) translateY(0); }
+    50% { opacity: 1; transform: scale(1.05) translateY(2px); }
+  }
+}
+
+:root {
+  /* Default: Dark Mode */
+  --theme-navy: #0A0E1A;
+  --theme-charcoal: #1A1F2E;
+  --theme-offwhite: #E8E6E1;
+  --theme-brightwhite: #F5F4F0;
+  --theme-teal: #6EBABA; /* Brightened to 7.2:1 against Navy for AAA compliance */
+}
+
+.light {
+  /* Flipped for Light Mode */
+  --theme-navy: #F7F5F0; /* Warm reading background */
+  --theme-charcoal: #FFFFFF; /* Pure white cards */
+  --theme-offwhite: #334155; /* Deep slate (10:1 ratio against Cream background) */
+  --theme-brightwhite: #0A0E1A; /* Strong Navy for headings (>15:1 ratio) */
+  --theme-teal: #195252; /* Darkened Teal to pass 7.5:1 against Cream and White */
 }
 
 html {
@@ -24,6 +48,12 @@ html {
 body {
   background-color: var(--color-navy);
   color: var(--color-offwhite);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Enforce accessible 1.75 line-height minimums for reading blocks */
+p, .leading-relaxed {
+  line-height: 1.75 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

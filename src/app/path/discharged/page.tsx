@@ -2,7 +2,17 @@ import { GuidedPath } from "@/components/GuidedPath";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I've left hospital",
+  title: "I've Left Hospital",
+  description: "Coming home after a mental health hospital stay can feel overwhelming. A calm guide through the first days and weeks of recovery.",
+  alternates: {
+    canonical: "/path/discharged",
+  },
+  openGraph: {
+    title: "I've Left Hospital",
+    description: "Coming home after a mental health hospital stay can feel overwhelming. A calm guide through the first days and weeks of recovery.",
+    url: "https://stillwithyou.app/path/discharged",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const screens = [
@@ -34,7 +44,8 @@ const screens = [
     mainMessage: "You don't have to figure out everything today.",
     supportingText: "But when you are ready, here is one concrete thing you can focus on.",
     nextStep: "Book a follow-up appointment with your GP to review your discharge and any medication.",
-    resourceLink: { label: "Find local support via Hub of Hope", href: "https://hubofhope.co.uk/" }
+    resourceLink: { label: "Find local support via Hub of Hope", href: "https://hubofhope.co.uk/" },
+    internalResourceLink: { label: "Explore Peer Support", href: "/resources#peer-support-communities" }
   }
 ];
 

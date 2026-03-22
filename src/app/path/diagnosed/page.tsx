@@ -2,7 +2,17 @@ import { GuidedPath } from "@/components/GuidedPath";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I've just been diagnosed",
+  title: "I've Just Been Diagnosed",
+  description: "A gentle, step-by-step guide for anyone who's just received a mental health diagnosis. What to expect, what to ask, and what comes next.",
+  alternates: {
+    canonical: "/path/diagnosed",
+  },
+  openGraph: {
+    title: "I've Just Been Diagnosed",
+    description: "A gentle, step-by-step guide for anyone who's just received a mental health diagnosis. What to expect, what to ask, and what comes next.",
+    url: "https://stillwithyou.app/path/diagnosed",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const screens = [
@@ -30,7 +40,8 @@ const screens = [
     mainMessage: "You don't need to figure everything out right now.",
     supportingText: "Take the information you have, look at your options, and pick one small next step. That's all you have to do today.",
     nextStep: "Read about what self-referring to NHS Talking Therapies involves.",
-    resourceLink: { label: "NHS Talking Therapies", href: "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/" }
+    resourceLink: { label: "NHS Talking Therapies", href: "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/" },
+    internalResourceLink: { label: "Explore NHS Services", href: "/resources#nhs-services" }
   }
 ];
 

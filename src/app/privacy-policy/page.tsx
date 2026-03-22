@@ -3,6 +3,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
+  description: "Still With You collects no personal data. No cookies, no tracking, no accounts. Your privacy is absolute.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy",
+    description: "Still With You collects no personal data. No cookies, no tracking, no accounts. Your privacy is absolute.",
+    url: "https://stillwithyou.app/privacy-policy",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function PrivacyPolicyPage() {

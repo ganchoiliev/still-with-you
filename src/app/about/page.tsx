@@ -1,4 +1,19 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why This Exists",
+  description: "The personal story behind Still With You — built from experience, not market research, for people the mental health system forgot.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "Why This Exists",
+    description: "The personal story behind Still With You — built from experience, not market research, for people the mental health system forgot.",
+    url: "https://stillwithyou.app/about",
+    images: ["/opengraph-image.png"],
+  },
+};
 
 export default function AboutPage() {
   return (

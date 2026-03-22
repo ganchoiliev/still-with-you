@@ -3,6 +3,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
+  description: "Still With You is not medical advice. Important information about what this service is and isn't.",
+  alternates: {
+    canonical: "/terms",
+  },
+  openGraph: {
+    title: "Terms of Service",
+    description: "Still With You is not medical advice. Important information about what this service is and isn't.",
+    url: "https://stillwithyou.app/terms",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function TermsPage() {

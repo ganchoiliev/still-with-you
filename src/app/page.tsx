@@ -1,4 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import { HeroSubtext } from "@/components/HeroSubtext";
+
+export const metadata: Metadata = {
+  title: "Still With You — Mental Health First Steps | UK",
+  description: "A free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step, whenever you're ready.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Still With You — Mental Health First Steps | UK",
+    description: "A free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step.",
+    url: "https://stillwithyou.app/",
+    images: ["/opengraph-image.png"],
+  },
+};
 
 export default function Home() {
   return (
@@ -8,18 +24,16 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium text-brightwhite mb-8 leading-[1.2]">
           You don&apos;t have to figure this out alone.
         </h1>
-        <p className="text-xl md:text-2xl text-offwhite/80 leading-relaxed max-w-xl">
-          Still With You is a free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step, whenever you&apos;re ready.
-        </p>
+        <HeroSubtext />
         
         {/* Subtle downward scroll indicator */}
         <a 
           href="#prompt" 
-          className="absolute bottom-4 left-0 opacity-50 flex items-center gap-3 text-sm uppercase tracking-widest text-teal hover:opacity-100 transition-opacity"
+          className="absolute bottom-4 left-0 opacity-80 hover:opacity-100 flex items-center gap-3 text-sm uppercase tracking-widest text-teal font-medium transition-opacity"
           aria-label="Scroll down to begin"
         >
           <span>Begin</span>
-          <svg className="animate-bounce" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg className="animate-breathe" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </a>

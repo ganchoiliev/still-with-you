@@ -3,8 +3,17 @@ import { Fragment } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mental Health Resources",
-  description: "Curated UK mental health support services.",
+  title: "UK Mental Health Resources",
+  description: "Curated UK mental health services: crisis support, NHS Talking Therapies, charities, peer support, and carer resources. All free.",
+  alternates: {
+    canonical: "/resources",
+  },
+  openGraph: {
+    title: "UK Mental Health Resources",
+    description: "Curated UK mental health services: crisis support, NHS Talking Therapies, charities, peer support, and carer resources. All free.",
+    url: "https://stillwithyou.app/resources",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const CATEGORIES = [
@@ -89,8 +98,10 @@ export default function ResourcesPage() {
       </div>
 
       <div className="space-y-16">
-        {CATEGORIES.map((category, idx) => (
-          <section key={idx}>
+        {CATEGORIES.map((category, idx) => {
+          const sectionId = category.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+          return (
+          <section key={idx} id={sectionId}>
             <h2 className="text-xl md:text-2xl text-brightwhite font-medium mb-2">{category.title}</h2>
             <p className="text-offwhite/60 mb-6">{category.description}</p>
             
@@ -121,7 +132,8 @@ export default function ResourcesPage() {
               ))}
             </div>
           </section>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

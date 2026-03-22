@@ -2,7 +2,17 @@ import { GuidedPath } from "@/components/GuidedPath";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I think I might need help",
+  title: "I Think I Might Need Help",
+  description: "Not sure if what you're feeling is \"bad enough\"? You don't need to be in crisis to deserve support. Here's how to start.",
+  alternates: {
+    canonical: "/path/not-sure",
+  },
+  openGraph: {
+    title: "I Think I Might Need Help",
+    description: "Not sure if what you're feeling is \"bad enough\"? You don't need to be in crisis to deserve support. Here's how to start.",
+    url: "https://stillwithyou.app/path/not-sure",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const screens = [
@@ -30,7 +40,8 @@ const screens = [
     mainMessage: "It takes courage to ask for help.",
     supportingText: "Whatever step you choose, you don't have to have it all figured out before you reach out.",
     nextStep: "Find an NHS Talking Therapies service near you and see what self-referral looks like.",
-    resourceLink: { label: "NHS Talking Therapies", href: "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/" }
+    resourceLink: { label: "NHS Talking Therapies", href: "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/" },
+    internalResourceLink: { label: "Explore Charities & Support", href: "/resources#charities-support-organisations" }
   }
 ];
 

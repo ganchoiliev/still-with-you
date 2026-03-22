@@ -2,7 +2,17 @@ import { GuidedPath } from "@/components/GuidedPath";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I just need to feel less alone",
+  title: "I Just Need to Feel Less Alone",
+  description: "If you're here, that took something. A quiet space for when you just need to know someone understands.",
+  alternates: {
+    canonical: "/path/alone",
+  },
+  openGraph: {
+    title: "I Just Need to Feel Less Alone",
+    description: "If you're here, that took something. A quiet space for when you just need to know someone understands.",
+    url: "https://stillwithyou.app/path/alone",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const screens = [
@@ -24,10 +34,13 @@ const screens = [
   },
   {
     mainMessage: "If you're not ready to talk, that's okay.",
-    supportingText: "Just know this: other people have been exactly where you are right now and come through it. You are not the exception. Tomorrow can be different."
+    supportingText: "Just know this: other people have been exactly where you are right now and come through it. You are not the exception. Tomorrow can be different.",
+    nextStep: "If you ever decide you want to talk to someone who will just listen without judgement, Samaritans are available 24/7.",
+    resourceLink: { label: "Visit Samaritans", href: "https://www.samaritans.org/" },
+    internalResourceLink: { label: "Explore Crisis Support", href: "/resources#crisis-support" }
   }
 ];
 
 export default function AlonePath() {
-  return <GuidedPath screens={screens} />;
+  return <GuidedPath screens={screens} showEmergencyContact={true} />;
 }

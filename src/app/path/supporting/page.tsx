@@ -2,7 +2,17 @@ import { GuidedPath } from "@/components/GuidedPath";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Supporting someone",
+  title: "Supporting Someone You Love",
+  description: "Watching someone struggle with mental health is hard. A practical, honest guide to being there without burning out.",
+  alternates: {
+    canonical: "/path/supporting",
+  },
+  openGraph: {
+    title: "Supporting Someone You Love",
+    description: "Watching someone struggle with mental health is hard. A practical, honest guide to being there without burning out.",
+    url: "https://stillwithyou.app/path/supporting",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 const screens = [
@@ -30,7 +40,8 @@ const screens = [
     mainMessage: "Take care of yourself so you can take care of them.",
     supportingText: "There are organisations specifically dedicated to supporting the carers and loved ones of those struggling.",
     nextStep: "Explore practical and emotional support available for carers.",
-    resourceLink: { label: "Carers UK Help & Advice", href: "https://www.carersuk.org/" }
+    resourceLink: { label: "Carers UK Help & Advice", href: "https://www.carersuk.org/" },
+    internalResourceLink: { label: "Explore Support for Carers", href: "/resources#for-supporters-carers" }
   }
 ];
 
