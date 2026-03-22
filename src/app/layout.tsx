@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { CrisisFooter } from "@/components/CrisisFooter";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,6 +29,7 @@ export default function RootLayout({
           </div>
         </main>
         <CrisisFooter />
+        <Analytics />
       </body>
     </html>
   );
