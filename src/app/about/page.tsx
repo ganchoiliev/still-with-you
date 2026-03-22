@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Why This Exists",
-  description: "The personal story behind Still With You — built from experience, not market research, for people the mental health system forgot.",
+  description: "The personal story behind Still With You - built from experience, not market research, for people the mental health system forgot.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "Why This Exists",
-    description: "The personal story behind Still With You — built from experience, not market research, for people the mental health system forgot.",
+    description: "The personal story behind Still With You - built from experience, not market research, for people the mental health system forgot.",
     url: "https://stillwithyou.app/about",
     images: ["/opengraph-image.png"],
   },
@@ -36,7 +36,7 @@ export default function AboutPage() {
           The system is built for crisis intervention and clinical treatment. It is terrible at the space in between. 
         </p>
         <p>
-          I learned the hard way that recovery doesn&apos;t start with a prescription. It starts with self-compassion, with human connection, and with small, manageable steps. It starts with having someone \u2014 or something \u2014 look you in the eye and say, &quot;I know you are terrified. But you are not broken.&quot;
+          I learned the hard way that recovery doesn&apos;t start with a prescription. It starts with self-compassion, with human connection, and with small, manageable steps. It starts with having someone, or something, look you in the eye and say, &quot;I know you are terrified. But you are not broken.&quot;
         </p>
       </section>
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
         <h2 className="text-xl md:text-2xl text-brightwhite font-medium mb-6">Our Mission</h2>
         <div className="p-6 md:p-8 rounded-2xl bg-charcoal/40 border border-teal/10">
           <p className="text-lg text-offwhite/90 leading-relaxed font-medium">
-            We believe that mental health support should start with being heard, not being prescribed. Still With You exists to help people take their first steps \u2014 at their own pace, with no pressure, and no judgement.
+            We believe that mental health support should start with being heard, not being prescribed. Still With You exists to help people take their first steps at their own pace, with no pressure, and no judgement.
           </p>
         </div>
       </section>

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
  
 export const runtime = 'edge'
  
-export const alt = 'Still With You — Mental Health First Steps | UK'
+export const alt = 'Still With You - Mental Health First Steps | UK'
 export const size = {
   width: 1200,
   height: 630,

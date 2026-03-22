@@ -22,11 +22,11 @@ const screens = [
   },
   {
     mainMessage: "You don't need to be in crisis to deserve support.",
-    supportingText: "You don't need to have a diagnosis. You don't need to be sure. If something doesn't feel right \u2014 if you're sleeping badly, withdrawing from people, feeling unlike yourself, struggling to get through the day \u2014 that's enough of a reason to explore your options."
+    supportingText: "You don't need to have a diagnosis. You don't need to be sure. If something doesn't feel right (if you're sleeping badly, withdrawing from people, feeling unlike yourself, struggling to get through the day), that's enough of a reason to explore your options."
   },
   {
     mainMessage: "There's a difference between a rough patch and something that needs attention.",
-    supportingText: "A rough patch usually has a clear cause and eases with time. If what you're feeling has lasted more than a couple of weeks, is getting worse, or is affecting your ability to work, sleep, or connect with others \u2014 it's worth talking to someone."
+    supportingText: "A rough patch usually has a clear cause and eases with time. If what you're feeling has lasted more than a couple of weeks, is getting worse, or is affecting your ability to work, sleep, or connect with others, it's worth talking to someone."
   },
   {
     mainMessage: "The gentlest first step is NHS Talking Therapies.",
@@ -34,7 +34,7 @@ const screens = [
   },
   {
     mainMessage: "You could also talk to your GP.",
-    supportingText: "Book a double appointment if you can \u2014 standard 10-minute slots aren't enough for this conversation. Be honest. You don't need to perform your pain or convince them something is wrong. Just say: 'I've been struggling and I'd like to talk about my options.'"
+    supportingText: "Book a double appointment if you can, as standard 10-minute slots aren't enough for this conversation. Be honest. You don't need to perform your pain or convince them something is wrong. Just say: 'I've been struggling and I'd like to talk about my options.'"
   },
   {
     mainMessage: "It takes courage to ask for help.",

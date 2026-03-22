@@ -26,11 +26,11 @@ const screens = [
   },
   {
     mainMessage: "If you've been prescribed medication, you might have questions. That's normal.",
-    supportingText: "You have every right to understand what you're taking and why. If your doctor hasn't explained it clearly, you can ask them to. You can also ask your pharmacist \u2014 they're often easier to reach and have more time to talk."
+    supportingText: "You have every right to understand what you're taking and why. If your doctor hasn't explained it clearly, you can ask them to. You can also ask your pharmacist, as they're often easier to reach and have more time to talk."
   },
   {
     mainMessage: "Medication is one tool, not the only one.",
-    supportingText: "Talking to someone \u2014 a therapist, a counsellor, a trusted person in your life \u2014 can make a real difference alongside or even instead of medication. In the UK, you can self-refer to NHS Talking Therapies without needing your GP's permission."
+    supportingText: "Talking to someone (a therapist, a counsellor, a trusted person in your life) can make a real difference alongside or even instead of medication. In the UK, you can self-refer to NHS Talking Therapies without needing your GP's permission."
   },
   {
     mainMessage: "Recovery isn't a straight line.",

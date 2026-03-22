@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { HeroSubtext } from "@/components/HeroSubtext";
 
 export const metadata: Metadata = {
-  title: "Still With You — Mental Health First Steps | UK",
+  title: "Still With You - Mental Health First Steps | UK",
   description: "A free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step, whenever you're ready.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Still With You — Mental Health First Steps | UK",
+    title: "Still With You - Mental Health First Steps | UK",
     description: "A free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step.",
     url: "https://stillwithyou.app/",
     images: ["/opengraph-image.png"],

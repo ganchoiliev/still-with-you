@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://stillwithyou.app"),
   title: {
     template: "%s | Still With You",
-    default: "Still With You — Mental Health First Steps | UK",
+    default: "Still With You - Mental Health First Steps | UK",
   },
   description: "A free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step, whenever you're ready.",
   openGraph: {
-    title: "Still With You — Mental Health First Steps | UK",
+    title: "Still With You - Mental Health First Steps | UK",
     description: "A free, gentle guide for anyone navigating mental health in the UK. No sign-up. No judgement. Just a next step.",
     url: "https://stillwithyou.app",
     siteName: "Still With You",
