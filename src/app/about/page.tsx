@@ -44,7 +44,7 @@ export default function AboutPage() {
         <h2 className="text-xl md:text-2xl text-brightwhite font-medium mb-6">Our Mission</h2>
         <div className="p-6 md:p-8 rounded-2xl bg-charcoal/40 border border-teal/10">
           <p className="text-lg text-offwhite/90 leading-relaxed font-medium">
-            We believe that mental health support should start with being heard, not being prescribed. Still With You exists to help people take their first steps at their own pace, with no pressure, and no judgement.
+            We believe that mental health support should start with being heard, not being prescribed. Still With You exists to help people take their first steps, at their own pace, with no pressure, and no judgement.
           </p>
         </div>
       </section>
