@@ -1,5 +1,11 @@
 import Link from "next/link";
 import { Fragment } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mental Health Resources",
+  description: "Curated UK mental health support services.",
+};
 
 const CATEGORIES = [
   {

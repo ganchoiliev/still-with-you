@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full flex-1">
       {/* Hero section */}
-      <section className="flex flex-col justify-center relative min-h-[calc(100svh-160px)] pb-24">
+      <section className="flex flex-col justify-center relative h-dvh pb-24 -mt-[104px] pt-[104px]">
         <h1 className="text-4xl md:text-5xl lg:text-5xl font-medium text-brightwhite mb-8 leading-[1.2]">
           You don&apos;t have to figure this out alone.
         </h1>
@@ -60,7 +60,7 @@ function PathCard({ href, title }: { href: string; title: string }) {
   return (
     <Link 
       href={href}
-      className="block w-full p-6 sm:p-8 rounded-2xl bg-charcoal/30 hover:bg-charcoal/60 transition-all duration-500 border border-offwhite/5 hover:border-teal/30 group"
+      className="block w-full p-6 sm:p-8 rounded-2xl bg-charcoal/30 hover:bg-charcoal/60 transition-all duration-500 border border-[rgba(255,255,255,0.06)] hover:border-teal/30 group"
     >
       <span className="text-lg md:text-xl text-offwhite/90 group-hover:text-brightwhite transition-colors">
         {title}

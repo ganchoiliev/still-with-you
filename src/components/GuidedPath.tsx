@@ -72,7 +72,7 @@ export function GuidedPath({ screens }: { screens: PathScreen[] }) {
           {screens.map((_, i) => (
             <div 
               key={i} 
-              className={`h-1.5 rounded-full transition-all duration-500 ease-out ${i === currentStep ? 'w-8 bg-teal' : 'w-2 bg-charcoal'}`}
+              className={`h-1.5 rounded-full transition-all duration-500 ease-out ${i === currentStep ? 'w-8 bg-teal' : 'w-2 bg-offwhite/20'}`}
               aria-label={i === currentStep ? `Current step ${i + 1} of ${screens.length}` : `Step ${i + 1}`}
             />
           ))}

@@ -1,4 +1,9 @@
 import { GuidedPath } from "@/components/GuidedPath";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Supporting someone",
+};
 
 const screens = [
   {

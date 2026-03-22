@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function CrisisFooter() {
   return (
     <footer className="w-full border-t border-charcoal/50 bg-navy mt-auto py-8">
@@ -16,6 +18,13 @@ export function CrisisFooter() {
             </span>
           </span>
         </p>
+        
+        <div className="mt-8 pt-6 border-t border-charcoal/30 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-xs text-offwhite/40">
+          <Link href="/privacy-policy" className="hover:text-offwhite/80 transition-colors">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-offwhite/80 transition-colors">Terms of Service</Link>
+          <span className="hidden sm:inline opacity-30">|</span>
+          <p>&copy; {new Date().getFullYear()} Still With You</p>
+        </div>
       </div>
     </footer>
   );
