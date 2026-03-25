@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Still With You collects no personal data. No cookies, no tracking, no accounts. Your privacy is absolute.",
+  description: "Still With You collects no personal data. No cookies, no tracking, no analytics, no accounts. Your privacy is absolute.",
   alternates: {
     canonical: "/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy",
-    description: "Still With You collects no personal data. No cookies, no tracking, no accounts. Your privacy is absolute.",
+    description: "Still With You collects no personal data. No cookies, no tracking, no analytics, no accounts. Your privacy is absolute.",
     url: "https://stillwithyou.app/privacy-policy",
     images: ["/opengraph-image.png"],
   },
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-xl text-brightwhite font-medium mb-4">You have a right to quiet</h2>
           <p>
-            When you're struggling, the last thing you want is to be tracked, targeted, or sold to. 
+            When you&apos;re struggling, the last thing you want is to be tracked, targeted, or sold to. 
             Still With You is built on the belief that your mental health search history belongs entirely to you.
           </p>
         </section>
@@ -37,21 +37,26 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-xl text-brightwhite font-medium mb-4">No tracking. No accounts. No cookies.</h2>
           <p>
-            At this stage, we do not require you to create an account to use the guided paths or access resources. 
-            There is no database attached to this site collecting your personal information, your IP address, or the paths you click on.
+            This site does not use analytics of any kind. There are no tracking scripts, no cookies, 
+            no pixels, and no third-party services collecting data about you or your visit.
           </p>
           <p className="mt-4">
-            We do not use cookies. You will not see a cookie banner because there is nothing to consent to. 
-            We do not use tracking pixels, Google Analytics, or any third-party advertising SDKs.
+            There is no database attached to this site. We do not collect your IP address, 
+            your browsing behaviour, or which paths you click on. You will not see a cookie banner 
+            because there is genuinely nothing to consent to.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl text-brightwhite font-medium mb-4">Anonymous Analytics</h2>
+          <h2 className="text-xl text-brightwhite font-medium mb-4">What this means in practice</h2>
           <p>
-            To understand if people are actually finding the site and whether they return to it, we use <strong>Plausible Analytics</strong>. 
-            Plausible is a privacy-first, cookieless analytics tool. It only gives us aggregated totals (e.g. &quot;50 people visited today&quot;), 
-            and explicitly does not track or identify individual users. It is fully compliant with GDPR, CCPA, and PECR out of the box.
+            We cannot tell how many people visit this site. We cannot tell which pages are popular. 
+            We accept that trade-off because your privacy matters more than our metrics.
+          </p>
+          <p className="mt-4">
+            If we ever decide to add privacy-respecting analytics in the future (such as a cookieless, 
+            GDPR-compliant tool like Plausible), we will update this policy first and be transparent about 
+            exactly what is collected.
           </p>
         </section>
 

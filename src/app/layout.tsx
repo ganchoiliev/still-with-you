@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { CrisisFooter } from "@/components/CrisisFooter";
-import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
@@ -77,7 +76,6 @@ export default function RootLayout({
             </div>
           </main>
           <CrisisFooter />
-          <Analytics />
         </ThemeProvider>
       </body>
     </html>
