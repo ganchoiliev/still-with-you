@@ -166,7 +166,7 @@ export function GuidedPath({ screens, showEmergencyContact }: { screens: PathScr
                   href={screen.resourceLink.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-teal text-navy font-medium hover:bg-brightwhite hover:text-navy transition-colors mb-4"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-teal text-navy font-medium hover:bg-brightwhite hover:text-navy transition-colors mb-4 w-full sm:w-auto"
                  >
                   <span>{screen.resourceLink.label}</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -176,7 +176,7 @@ export function GuidedPath({ screens, showEmergencyContact }: { screens: PathScr
               {screen.internalResourceLink && (
                 <Link 
                   href={screen.internalResourceLink.href}
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-charcoal/80 border border-teal/30 text-brightwhite font-medium hover:bg-teal hover:text-navy hover:border-teal transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-charcoal/80 border border-teal/30 text-brightwhite font-medium hover:bg-teal hover:text-navy hover:border-teal transition-colors w-full sm:w-auto"
                 >
                   <span>{screen.internalResourceLink.label}</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -186,17 +186,17 @@ export function GuidedPath({ screens, showEmergencyContact }: { screens: PathScr
           )}
         </div>
 
-        <div className="mt-12 pb-8 flex items-center justify-between">
+        <div className="mt-12 pb-8 flex items-center justify-between overflow-hidden">
           <button 
             onClick={handleBack}
             disabled={currentStep === 0}
             aria-label="Go to previous step"
-            className={`px-6 py-4 -ml-6 text-offwhite/50 hover:text-brightwhite transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/60 focus-visible:rounded-lg ${currentStep === 0 ? 'opacity-0 pointer-events-none' : ''}`}
+            className={`px-4 py-4 -ml-4 text-offwhite/50 hover:text-brightwhite transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/60 focus-visible:rounded-lg ${currentStep === 0 ? 'opacity-0 pointer-events-none' : ''}`}
           >
             Back
           </button>
           
-          <div className="flex items-center justify-center -mx-2" role="tablist" aria-label="Progress">
+          <div className="flex items-center justify-center flex-1 min-w-0" role="tablist" aria-label="Progress">
             {screens.map((_, i) => (
               <button
                 key={i}
@@ -204,7 +204,7 @@ export function GuidedPath({ screens, showEmergencyContact }: { screens: PathScr
                 disabled={i >= displayStep}
                 aria-label={i === displayStep ? `Current step ${i + 1} of ${screens.length}` : i < displayStep ? `Go back to step ${i + 1}` : `Step ${i + 1} (upcoming)`}
                 aria-current={i === displayStep ? 'step' : undefined}
-                className={`group flex items-center justify-center min-w-[44px] min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/60 rounded-full ${i < displayStep ? 'cursor-pointer' : 'cursor-default'}`}
+                className={`group flex items-center justify-center flex-1 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/60 rounded-full ${i < displayStep ? 'cursor-pointer' : 'cursor-default'}`}
               >
                 <span
                   className={`block rounded-full transition-all duration-500 ease-out ${
@@ -223,12 +223,12 @@ export function GuidedPath({ screens, showEmergencyContact }: { screens: PathScr
             <button 
               onClick={handleNext}
               aria-label="Go to next step"
-              className="px-8 py-3 rounded-full bg-charcoal text-offwhite font-medium hover:bg-charcoal/80 hover:text-brightwhite transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/60"
+              className="px-6 py-3 rounded-full bg-charcoal text-offwhite font-medium hover:bg-charcoal/80 hover:text-brightwhite transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/60"
             >
               Next
             </button>
           ) : (
-            <div className="w-[110px]" /> /* Spacer to keep dots centered */
+            <div className="w-[86px]" /> /* Spacer to keep dots centered */
           )}
         </div>
         

@@ -71,7 +71,7 @@ export default function RootLayout({
           </a>
           <Header />
           <main id="main-content" className="flex-1 flex flex-col items-center">
-            <div className="w-full max-w-screen-sm px-6 pb-12 md:pb-20 flex flex-col flex-1">
+            <div className="w-full max-w-screen-sm px-6 pb-12 md:pb-20 flex flex-col flex-1 overflow-x-hidden">
               {children}
             </div>
           </main>
